@@ -4,9 +4,9 @@ public class Monitor {
     public String manufacturer;
     public String modelName;
     public int diagonal;
-    public int screenHeight = 0;
-    public int screenWidth = 0;
-    public boolean isBroken = false;
+    public int screenHeight;
+    public int screenWidth;
+    public boolean isBroken;
 
     public Monitor(String manufacturer, String modelName, int diagonal){
         this.manufacturer = manufacturer;
@@ -20,7 +20,7 @@ public class Monitor {
         screenWidth = width;
     }
 
-    public void getInfo(){
+    public void printInfo(){
         if (isBroken){
             System.out.println("Monitor is broken!\n\n");
         } else{

@@ -3,14 +3,14 @@ package main.java.site.kpokogujl;
 public class Pen {
     String name;
     PenType type;
-    Boolean isEmpty = false;
+    boolean isEmpty;
 
     public Pen(String name, PenType type){
         this.name = name;
         this.type = type;
     }
 
-    public void getStatus(){
+    public void printStatus(){
         if (isEmpty){
             System.out.println("You must fill more ink in " + name + "!");
         } else {
